@@ -1,0 +1,146 @@
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #e50914 0%, #221f1f 100%);
+    background-size: 100%;
+    animation: gradientBG 10s ease infinite;
+    background-image: url("https://cdn.pixabay.com/photo/2024/02/18/14/34/ai-generated-8581405_1280.jpg");
+    background-repeat: no-repeat;
+    background-position: center ;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .lin {
+    background: linear-gradient(45deg, #e50914, #b81d24);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(229, 9, 20, 0.829);
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .lin:hover {
+    background: linear-gradient(45deg, #b81d24, #e50914);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.671);
+  }
+  
+  h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeInDown 1s ease;
+  }
+  
+  @keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  form {
+    width: 70%;
+    background: rgba(34, 31, 31, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    animation: slideIn 1s ease;
+  }
+  
+  @keyframes slideIn {
+    0% { transform: translateY(100px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 5px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    animation: fadeInUp 1.2s ease;
+  }
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  .links {
+    text-align: center;
+  }
+  
+  input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+  }
+  
+  input:focus {
+    border-color: #e50914;
+    outline: none;
+    box-shadow: 0 0 8px rgba(229, 9, 20, 0.7);
+    transform: scale(1.05);
+  }
+  
+  button {
+    background: linear-gradient(45deg, #e50914, #b81d24);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(45deg, #b81d24, #e50914);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(229, 9, 20, 0.8);
+  }
+  
+  a {
+    color: #e50914;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #b81d24;
+  }
+  
+  @media (max-width: 480px) {
+    form {
+      padding: 20px;
+    }
+  }
