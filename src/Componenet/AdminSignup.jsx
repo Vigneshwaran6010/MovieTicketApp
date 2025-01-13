@@ -73,7 +73,7 @@ const AdminSignup = () => {
     setLoading(true); // Show loader
     try {
       const response = await axios.post(
-        "http://`:8080/admin",
+        "http://localhost:8080/admin",
         formData,
         {
           headers: {
