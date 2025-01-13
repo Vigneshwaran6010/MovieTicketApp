@@ -42,7 +42,7 @@ const LoginPage = () => {
 
     try {
       const response = await axios.get(
-        `http://192.168.1.243:8080/user/userLogin?userEmail=${formData.userEmail}&userPassword=${formData.userPassword}`,
+        `http://localhost:8080/user/userLogin?userEmail=${formData.userEmail}&userPassword=${formData.userPassword}`,
         {
           headers: {
             "Content-Type": "application/json",

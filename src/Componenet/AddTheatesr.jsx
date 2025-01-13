@@ -186,7 +186,7 @@ const AddTheaters = () => {
     setErrorMessage(null);
 
     try {
-      const response = await axios.post('http://localhost:8080/Theatre', theaterData, {
+      const response = await axios.post('http://localhost:8080/theatre', theaterData, {
         headers: { 'Content-Type': 'application/json' },
       });
 
